@@ -1,0 +1,10 @@
+<ul id="posts" class="list-group container">
+  <h1 class="list-group-item list-group-item-action active">Posts</h1>
+
+  <% @posts.each do |post| %>
+    <p >
+      <%= link_to post.title, post, class:"list-group-item list-group-item-action"%>
+    </p>
+  <% end %>
+</ul>
+
